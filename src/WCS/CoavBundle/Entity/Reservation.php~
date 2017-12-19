@@ -36,7 +36,6 @@ class Reservation
     private $publicationDate;
 
     /**
-     * Many passengers have many reservations
      * @ORM\ManyToMany(targetEntity="WCS\CoavBundle\Entity\User", mappedBy="reservations")
      * @ORM\JoinColumn(nullable=false)
      */
