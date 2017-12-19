@@ -115,16 +115,6 @@ class User
      */
     private $pilots;
 
-    /**
-     * @ORM\OneToMany(targetEntity="WCS\CoavBundle\Entity\Review", mappedBy="userRated")
-     */
-    private $rates;
-
-    /**
-     * @ORM\OneToMany(targetEntity="WCS\CoavBundle\Entity\Review", mappedBy="reviewAuthor")
-     */
-    private $authors;
-
 
     /**
      * Get id

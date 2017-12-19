@@ -59,7 +59,7 @@ class PlaneModel
     /**
      * @ORM\OneToMany(targetEntity="WCS\CoavBundle\Entity\Flight", mappedBy="plane")
      */
-    private $planes;
+    private $flights;
 
 
     /**

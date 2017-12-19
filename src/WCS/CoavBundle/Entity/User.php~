@@ -115,16 +115,6 @@ class User
      */
     private $pilots;
 
-    /**
-     * @ORM\OneToMany(targetEntity="WCS\CoavBundle\Entity\Review", mappedBy="userRated")
-     */
-    private $rates;
-
-    /**
-     * @ORM\OneToMany(targetEntity="WCS\CoavBundle\Entity\Review", mappedBy="reviewAuthor")
-     */
-    private $authors;
-
 
     /**
      * Get id
@@ -532,5 +522,39 @@ class User
     public function getRates()
     {
         return $this->rates;
+    }
+
+    /**
+     * Add author
+     *
+     * @param \WCS\CoavBundle\Entity\Review $author
+     *
+     * @return User
+     */
+    public function addAuthor(\WCS\CoavBundle\Entity\Review $author)
+    {
+        $this->authors[] = $author;
+
+        return $this;
+    }
+
+    /**
+     * Remove author
+     *
+     * @param \WCS\CoavBundle\Entity\Review $author
+     */
+    public function removeAuthor(\WCS\CoavBundle\Entity\Review $author)
+    {
+        $this->authors->removeElement($author);
+    }
+
+    /**
+     * Get authors
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getAuthors()
+    {
+        return $this->authors;
     }
 }

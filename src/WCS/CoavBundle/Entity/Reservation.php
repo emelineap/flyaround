@@ -43,7 +43,6 @@ class Reservation
     private $passenger;
 
     /**
-     * One flight has one reservation
      * @ORM\OneToOne(targetEntity="WCS\CoavBundle\Entity\Flight")
      */
     private $flight;
