@@ -1,1 +1,28 @@
-Hello World!
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
+    <title>Welcome on CoAv</title>
+</head>
+<body>
+
+<div class="header">
+    <img width="100%" src="https://images.trvl-media.com/media/content/expus/graphics/launch/home/tvly/150324_flights-hero-image_1330x742.jpg" alt="header">
+
+</div>
+
+<table class="table">
+    <td><a class="btn btn-info" href="{{ path('flight_index') }}">See flights ️🛫</a></td>
+    <td><a class="btn btn-info" href="{{ path('planemodel_index') }}">See plane models ✈️</a></td>
+    <td><a class="btn btn-info" href="{{ path('reservation_index') }}">See reservations 📖</a></td>
+    <td><a class="btn btn-info" href="{{ path('review_index') }}">See reviews 💯</a></td>
+    <td><a class="btn btn-info" href="{{ path('terrain_index') }}">See fields 🛬</a></td>
+    <td><a class="btn btn-info" href="{{ path('user_index') }}">See users 👩‍👨</a></td>
+</table>
+
+</body>
+</html>

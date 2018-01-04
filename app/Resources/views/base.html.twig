@@ -2,12 +2,16 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <title>{% block title %}Welcome on CoAv{% endblock %}</title>
         {% block stylesheets %}{% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
     </head>
     <body>
+
+    <div class="container-fluid">
         {% block body %}{% endblock %}
         {% block javascripts %}{% endblock %}
+    </div>
     </body>
 </html>

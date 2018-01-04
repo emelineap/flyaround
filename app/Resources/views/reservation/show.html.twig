@@ -3,7 +3,7 @@
 {% block body %}
     <h1>Reservation</h1>
 
-    <table>
+    <table class="table">
         <tbody>
             <tr>
                 <th>Id</th>
@@ -19,8 +19,11 @@
             </tr>
             <tr>
                 <th>Passenger</th>
-                <td>{{ reservation.passenger }}</td>
-            </tr>
+                <td>
+                    {% for passenger in reservation.passenger %}
+                        {{ passenger.username }}
+                    {% endfor %}
+                </td>            </tr>
             <tr>
                 <th>Flight</th>
                 <td>{{ reservation.flight }}</td>

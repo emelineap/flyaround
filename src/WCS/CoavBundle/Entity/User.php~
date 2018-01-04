@@ -96,7 +96,7 @@ class User
 
     /**
      * @ORM\ManyToOne(targetEntity="WCS\CoavBundle\Entity\Review")
-     * @ORM\JoinColumn(nullable=false)
+     * @ORM\JoinColumn(nullable=true)
      */
     private $reviews;
 
@@ -115,7 +115,7 @@ class User
     private $isActive;
 
     /**
-     * @ORM\ManyToMany(targetEntity="WCS\CoavBundle\Entity\Reservation", inversedBy="passengers")
+     * @ORM\ManyToMany(targetEntity="WCS\CoavBundle\Entity\Reservation", mappedBy="passenger")
      * @ORM\JoinColumn(nullable=false)
      */
     private $reservations;
