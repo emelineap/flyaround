@@ -15,6 +15,19 @@ class Reservation
 
     /* Adding personal methods */
 
+    /**
+     * Reservation constructor.
+     *
+     * Set publicationDate at now.
+     */
+/*    public function __construct()
+    {
+        $this->publicationDate = new \DateTime('now');
+    }*/
+
+    /**
+     * @return int
+     */
     public function __toString()
     {
         return $this->id;
