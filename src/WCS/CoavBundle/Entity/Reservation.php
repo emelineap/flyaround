@@ -21,7 +21,7 @@ class Reservation
      * Set publicationDate at now.
      */
 /*    public function __construct()
-    {
+    {8889
         $this->publicationDate = new \DateTime('now');
     }*/
 

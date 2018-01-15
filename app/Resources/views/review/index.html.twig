@@ -3,7 +3,7 @@
 {% block body %}
     <h1>Reviews list</h1>
 
-    <table>
+    <table class="table">
         <thead>
             <tr>
                 <th>Id</th>
@@ -37,7 +37,10 @@
 
     <ul>
         <li>
-            <a href="{{ path('review_new') }}">Create a new review</a>
+            <a href="{{ path('review_new') }}" class="btn btn-info">Create a new review</a>
+        </li>
+        <li>
+            <a href="{{ path('wcs_coav_homepage') }}" class="btn btn-info">Back to homepage</a>
         </li>
     </ul>
 {% endblock %}
